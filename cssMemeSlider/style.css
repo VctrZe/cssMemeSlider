@@ -145,10 +145,13 @@ body {
   cursor: pointer;
   transition: all ease-in-out 0.5s;
 }
-.dots label input[type="radio"]:hover,
-.dots label input[type="radio"]:active { 
+.dots label input[type="radio"]:hover {
   background-color: var(--text-color);
   border-color: var(--text-color);
+}
+.dots label input[type="radio"]:focus,
+.dots label input[type="radio"]:active {
+  outline: none; 
 }
 .dots label input[type="radio"]:checked { 
   background-color: transparent;
@@ -172,4 +175,3 @@ body {
     flex: 1 0 100%;
   }
 }
-
